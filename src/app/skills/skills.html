@@ -1,0 +1,13 @@
+<section class="resume-section" aria-labelledby="skills-title">
+  <h2 id="skills-title">skills works!</h2>
+  <ul class="resume-list">
+    @for (skill of skills; track skill.id ?? $index) {
+      <li class="resume-card">
+        <h3>{{ skill.name }}</h3>
+        <p>{{ skill.level }}</p>
+      </li>
+    } @empty {
+      <li>No hay habilidades registradas.</li>
+    }
+  </ul>
+</section>

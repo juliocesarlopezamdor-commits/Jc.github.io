@@ -1,0 +1,14 @@
+<section class="resume-section" aria-labelledby="education-title">
+  <h2 id="education-title">education works!</h2>
+  <ul class="resume-list">
+    @for (item of educationItems; track item.id ?? $index) {
+      <li class="resume-card">
+        <h3>{{ item.degree }}</h3>
+        <p><strong>{{ item.institution }}</strong> · {{ item.location }}</p>
+        <p>{{ item.startDate }} – {{ item.endDate }}</p>
+      </li>
+    } @empty {
+      <li>No hay estudios registrados.</li>
+    }
+  </ul>
+</section>

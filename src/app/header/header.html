@@ -1,0 +1,21 @@
+<section class="header-profile" aria-label="Perfil">
+	<div class="header-profile__identity">
+		<h1>Julio Cesar</h1>
+		<p>Goal in life</p>
+	</div>
+
+	<img
+		class="header-profile__photo"
+		src="{{ header.photoUrl }}"
+		alt="Foto de {{ header.name }}"
+		width="200"
+		height="200"
+	/>
+
+	<address class="header-profile__contact">
+		<p>{{ header.email }}</p>
+		<p>{{ header.phoneNumber }}</p>
+		<p>{{ header.location }}</p>
+		<p>{{ header.socialNetwork }}</p>
+	</address>
+</section>

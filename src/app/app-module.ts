@@ -3,19 +3,30 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Header } from './header/header';
+import { Education } from './education/education';
+import { Skills } from './skills/skills';
+import { Certificates } from './certificates/certificates';
+import { Languages } from './languages/languages';
+import { Interests } from './interests/interests';
+import { WorkExperience } from './work-experience/work-experience';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Header,
+    Education,
+    Skills,
+    Certificates,
+    Languages,
+    Interests,
+    WorkExperience,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideClientHydration(withEventReplay()),
-  ],
-  bootstrap: [App]
+  imports: [BrowserModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebase)],
+  providers: [provideBrowserGlobalErrorListeners(), provideClientHydration(withEventReplay())],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

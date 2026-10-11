@@ -1,0 +1,12 @@
+<section class="resume-section" aria-labelledby="interests-title">
+  <h2 id="interests-title">interests works!</h2>
+  <ul class="resume-list">
+    @for (interest of interests; track interest.id ?? $index) {
+      <li class="resume-card">
+        <h3>{{ interest.name }}</h3>
+      </li>
+    } @empty {
+      <li>No hay intereses registrados.</li>
+    }
+  </ul>
+</section>

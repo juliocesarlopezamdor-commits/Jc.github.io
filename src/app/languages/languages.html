@@ -1,0 +1,13 @@
+<section class="resume-section" aria-labelledby="languages-title">
+  <h2 id="languages-title">languages works!</h2>
+  <ul class="resume-list">
+    @for (language of languages; track language.id ?? $index) {
+      <li class="resume-card">
+        <h3>{{ language.name }}</h3>
+        <p>{{ language.level }}</p>
+      </li>
+    } @empty {
+      <li>No hay idiomas registrados.</li>
+    }
+  </ul>
+</section>

@@ -1,0 +1,13 @@
+<section class="resume-section" aria-labelledby="certificates-title">
+  <h2 id="certificates-title">certificates works!</h2>
+  <ul class="resume-list">
+    @for (certificate of certificates; track certificate.id ?? $index) {
+      <li class="resume-card">
+        <h3>{{ certificate.title }}</h3>
+        <p>{{ certificate.issuer }} · {{ certificate.date }}</p>
+      </li>
+    } @empty {
+      <li>No hay certificaciones registradas.</li>
+    }
+  </ul>
+</section>

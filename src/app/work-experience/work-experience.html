@@ -1,0 +1,16 @@
+<section class="resume-section" aria-labelledby="work-experience-title">
+  <h2 id="work-experience-title">Experiencia laboral</h2>
+  <ul class="resume-list">
+    @for (experience of experiences; track experience.id ?? $index) {
+      <li class="resume-card">
+        <h3>Backend Developer</h3>
+        <p>Frontend Developer</p>
+        <p><strong>Company</strong> · Location</p>
+        <p>2024 – 2026</p>
+        <p>Accomplishment</p>
+      </li>
+    } @empty {
+      <li>No hay experiencia laboral registrada.</li>
+    }
+  </ul>
+</section>
