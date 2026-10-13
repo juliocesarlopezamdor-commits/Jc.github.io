@@ -26,7 +26,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     WorkExperience,
   ],
   imports: [BrowserModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebase)],
-  providers: [provideBrowserGlobalErrorListeners(), provideClientHydration(withEventReplay())],
+  providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
 export class AppModule {}
