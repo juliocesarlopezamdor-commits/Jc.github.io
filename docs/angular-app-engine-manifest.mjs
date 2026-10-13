@@ -6,6 +6,6 @@ export default {
   "en-US": ""
 },
   entryPoints: {
-    '': () => import('./main.server.mjs')
+    '': () => import('./server/main.server.mjs')
   },
 };

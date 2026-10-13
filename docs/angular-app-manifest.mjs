@@ -1,6 +1,6 @@
 
 export default {
-  bootstrap: () => import('./main.server.mjs').then(m => m.default),
+  bootstrap: () => import('./server/main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
   baseHref: '/',
   locale: undefined,
