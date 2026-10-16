@@ -46,7 +46,7 @@
               "src/styles.css"
             ],
           "outputPath": { "base": "docs", "browser": "" },
-          "baseHref": "/Jc.github.io/"
+          "baseHref": "/"
           },
           "configurations": {
             "production": {
