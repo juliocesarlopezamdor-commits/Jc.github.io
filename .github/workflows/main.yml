@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: test
-        run: npm test --no-watch --browsers=ChromeHeadlessCI
+        run: npx ng test --no-watch --browsers=ChromeHeadlessCI
 
       - name: build
         run: npm run build --output-path=docs
