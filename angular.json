@@ -94,6 +94,7 @@
   "builder": "@angular/build:unit-test",
   "options": {
     "buildTarget": "mycv:build",
+    "tsConfig": "tsconfig.spec.json",
     "polyfills": [
       "zone.js"
     ],
