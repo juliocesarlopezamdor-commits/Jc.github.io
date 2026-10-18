@@ -95,9 +95,6 @@
   "options": {
     "buildTarget": "mycv:build",
     "tsConfig": "tsconfig.spec.json",
-    "polyfills": [
-      "zone.js"
-    ],
     "runner": "karma",
     "runnerConfig": true
   }
