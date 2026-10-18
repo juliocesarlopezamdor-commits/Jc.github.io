@@ -90,16 +90,17 @@
           },
           "defaultConfiguration": "development"
         },
-        "test": {
-          "builder": "@angular/build:unit-test",
-          "options": {
-            "polyfills": [
-              "zone.js"
-            ],
-            "runner": "karma",
-            "runnerConfig": true
-          }
-        },
+"test": {
+  "builder": "@angular/build:unit-test",
+  "options": {
+    "buildTarget": "mycv:build",
+    "polyfills": [
+      "zone.js"
+    ],
+    "runner": "karma",
+    "runnerConfig": true
+  }
+},
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
