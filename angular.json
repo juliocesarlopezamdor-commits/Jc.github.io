@@ -95,8 +95,7 @@
   "options": {
     "buildTarget": "mycv:build",
     "tsConfig": "tsconfig.spec.json",
-    "runner": "karma",
-    "runnerConfig": true
+    "runner": "karma"
   }
 },
         "cypress-run": {
