@@ -95,7 +95,6 @@
   "options": {
     "buildTarget": "mycv:build",
     "tsConfig": "tsconfig.spec.json",
-    "karmaConfig": "karma.conf.js",
     "runner": "karma"
   }
 },
